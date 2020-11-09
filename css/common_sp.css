@@ -1,0 +1,481 @@
+@charset "UTF-8";
+
+/* CSS Information
+---------------------------------------------------------------
+Site URL:http://machiaruki.com/bunkasozosha/
+File name:common_sp.css
+Summary:base styles
+Created:2020-9-15
+Last update:2020-9-15 by Sadaoka
+Author:	Sadaoka(BUNKASOZOSHA Co.,Ltd.)
+Copyright:(C) BUNKASOZOSHA Co.,Ltd.
+--------------------------------------------------------------- */
+
+/* Link */
+/* ------------------------------------------------------------ */
+a:link,
+a:visited {
+	color: #231815;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #231815;
+	text-decoration: none;
+}
+
+.alpha {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.alpha:hover {
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+
+/* Font */
+/* ------------------------------------------------------------ */
+em {
+	background-color: #f00;
+	font-style: normal;
+}
+
+sup {
+	font-size: 66%;
+	vertical-align: top;
+}
+
+sub {
+	font-size: 66%;
+	vertical-align: baseline;
+}
+
+/* 影 */
+/* ------------------------------------------------------------ */
+.f_sdw {
+	text-shadow: 0px 0px 8px #000;
+}
+
+/* インデント1文字分 */
+/* ------------------------------------------------------------ */
+.indent {
+	text-indent: -1em;
+	margin-left: 1em;
+}
+
+/* Align */
+/* ------------------------------------------------------------ */
+.a_left {
+	text-align: left !important;
+}
+
+.a_center {
+	text-align: center !important;
+}
+
+.a_right {
+	text-align: right !important;
+}
+
+/* Float */
+/* ------------------------------------------------------------ */
+.f_left {
+	float: left;
+}
+
+.f_right {
+	float: right;
+}
+
+/* Clear */
+/* ------------------------------------------------------------ */
+.clfx:after {
+	content: '';
+	height: 0;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+
+/* HR */
+/* ------------------------------------------------------------ */
+hr {
+	height: 1px;
+	margin: 60px 0;
+	padding: 0;
+	display: block;
+	border: 0;
+	border-top: 1px #e6e6e6 solid;
+}
+
+/* Margin */
+/* ------------------------------------------------------------ */
+.c_mgn {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* pc_mode / sp_mode */
+/* ------------------------------------------------------------ */
+.pc_mode {
+	display: none;
+}
+
+.sp_mode {
+	display: block !important;
+}
+
+/* Header */
+/* ------------------------------------------------------------ */
+header {
+	background: #cbb08b;
+}
+header .floating {
+}
+header .inbox {
+	margin: auto;
+	padding: 0 20px;
+}
+header #toplogo {
+	margin: 3vh 0 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	left: 0;
+	z-index: 110;
+}
+header #logo {
+	font-size: 14px;
+	font-weight: 600;
+}
+header #gn {
+	position: relative;
+}
+
+/* ハンバーガーメニュー　ボタン */
+header #smp_open_menu {
+	color: #231815;
+	text-transform: uppercase;
+	height: 10vw;
+	width: 10vw;
+	position: fixed;
+	top: 2vw;
+	right: 2vw;
+	display: table;
+	cursor: pointer;
+	z-index: 15000;
+}
+.menu-trigger,
+.menu-trigger span {
+	display: inline-block;
+	transition: all .4s;
+	box-sizing: border-box;
+}
+.menu-trigger {
+	position: relative;
+	width: 9.375vw;
+	height: 9.375vw;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.menu-trigger span {
+	width: 70%;
+	height: 1px;
+	background-color: #231815;
+	border-radius: 4px;
+	display: block;
+	margin: 0.9375vw auto;
+}
+.menu-trigger strong {
+	color: #231815;
+	font-size: 0.6rem;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1;
+	display: block;
+	padding-top: 0.75vw;
+}
+.menu-trigger strong.close,
+.menu-trigger.active strong.open {
+	display: none;
+	padding-top: 1.25vw;
+}
+.menu-trigger.active strong.close,
+.menu-trigger strong.open {
+	display: block;
+}
+.menu-trigger.active {
+	z-index: 20000;
+}
+.menu-trigger.active span {
+	background-color: #231815;
+}
+.menu-trigger.active strong {
+	color: #231815;
+}
+.menu-trigger.active span:nth-of-type(1) {
+	-webkit-transform: translateY(1.25vw) rotate(-45deg);
+	transform: translateY(1.25vw) rotate(-45deg);
+}
+.menu-trigger.active span:nth-of-type(2) {
+	-webkit-transform: translateY(0) rotate(45deg);
+	transform: translateY(0) rotate(45deg);
+}
+.menu-trigger.active span:nth-of-type(3) {
+	opacity: 0;
+}
+
+/* ハンバーガーメニュー */
+#overlay {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 120%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+header #gn.fixed {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+}
+header #gn_main {
+	position: fixed;
+	top: 0;
+	right: -90%;
+	z-index: 999;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	width: 50%;
+	height: 100%;
+	background: #ffffff;
+	color: #000000;
+	-moz-transition-property: all;
+	-o-transition-property: all;
+	-webkit-transition-property: all;
+	transition-property: all;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+header #gn_main.open {
+	right: 0;
+}
+header #smp_close_menu {
+	position: absolute;
+	top: 0;
+	right: 1.5625vw;
+	width: 15vw;
+	cursor: pointer;
+}
+header #smp_close_menu img {
+	width: 100%;
+}
+header #gn_main nav {
+	text-align: left;
+	padding: 18.75vw 3.125vw 3.125vw;
+}
+header #gn_main ul.menu {
+	margin-bottom: 4.6875vw;
+}
+header #gn_main ul.menu li {
+	text-align: right;
+}
+header #gn_main ul.menu li a {
+	color: #000000;
+	font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 0.05em;
+	line-height: 1.35;
+	display: block;
+	margin-bottom: 1px;
+	width: 100%;
+	padding: 3.125vw;
+	box-sizing: border-box;
+}
+header #gn_main ul.menu li.cart a {
+	background: url(../images/icon_cart_b.png) no-repeat right center;
+	background-size: 10.3125vw auto;
+	background: url(../images/header_cart.png) no-repeat 96% center;
+	background-size: 6.25vw auto;
+}
+
+/* Main */
+/* ------------------------------------------------------------ */
+#main {
+	color: #6f6b6a;
+	display: block;
+}
+#main section {
+}
+#main .inbox {
+	padding: 0 10px;
+}
+#main .inbox h2 {
+	color: #231815;
+	text-align: center;
+	font-size: 1.4rem;
+	line-height: 1;
+	letter-spacing: 0.03em;
+	margin-bottom: 60px;
+}
+#main .inbox h2 span {
+	font-weight: 600;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 30px;
+}
+#main .inbox h2 span::after {
+	content: "";
+	background: #6f6b6a;
+	height: 1px;
+	width: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+#main .inbox h2+p {
+	font-size: 1rem;
+	line-height: 1.8;
+	letter-spacing: 0.06em;
+}
+
+/* Footer */
+/* ------------------------------------------------------------ */
+footer {
+	background: #cbb08b;
+	text-align: center;
+	padding: 60px 0 20px;
+}
+footer .inbox {
+	padding: 0 10px;
+}
+footer .inbox h2 {
+	color: #231815;
+	text-align: center;
+	font-size: 1.4rem;
+	line-height: 1;
+	letter-spacing: 0.03em;
+	margin-bottom: 90px;
+}
+footer .inbox h2 span {
+	font-weight: 600;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 30px;
+}
+footer .inbox h2 span::after {
+	content: "";
+	background: #6f6b6a;
+	height: 1px;
+	width: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+footer .inbox .tel {
+	font-size: 2rem;
+	font-weight: 600;
+	font-style: italic;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+footer .inbox h2+p+p+p {
+	font-size: 1rem;
+	line-height: 1.8;
+	letter-spacing: 0.05em;
+}
+footer a {
+	color: inherit;
+}
+footer a:hover {
+}
+footer h2 {
+	margin-bottom: 50px;
+	padding-left: 2px;
+	height: 32px;
+}
+footer p.contact {
+	font-size: 1.4rem;
+	line-height: 1;
+	letter-spacing: 0.1em;
+}
+footer p.copyright {
+	margin-top: 60px;
+	font-size: 0.7rem;
+	letter-spacing: 0.1em;
+}
+
+/* fadein */
+/* ------------------------------------------------------------ */
+.fadein {
+	transform: translate(0, 40px);
+	transition: all 700ms;
+	opacity: 0;
+}
+
+/* scrollin */
+/* ------------------------------------------------------------ */
+.fadein.scrollin {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+/* scroll banner */
+/* ------------------------------------------------------------ */
+.scroll_banner_box {
+	position: fixed;
+	bottom: 60px;
+	right: 20px;
+	z-index: 10;
+}
+
+.scroll_banner_box .scroll_banner_box_area {
+	width: 200px;
+	position: relative;
+}
+
+.scroll_banner_box .scroll_banner_box_area .banner {
+	background: #fff;
+	width: 200px;
+	border: 1px #fff solid;
+}
+
+.scroll_banner_box .scroll_banner_box_area .close {
+	width: 20px;
+	position: absolute;
+	top: 1px;
+	right: -1px;
+	z-index: 11;
+}
+
+/* トップページに戻るボタン */
+/* ------------------------------------------------------------ */
+.pagetop {
+	background: #fff;
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+.pagetop a {
+	display: block;
+}
+.pagetop img {
+	width: 30px;
+	height: 30px;
+}

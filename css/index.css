@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* CSS Information
+---------------------------------------------------------------
+Site URL:http://machiaruki.com/bunkasozosha/
+File name:index.css
+Summary:base styles
+Created:2020-9-15
+Last update:2020-10-26 by Sadaoka
+Author:	Sadaoka(BUNKASOZOSHA Co.,Ltd.)
+Copyright:(C) BUNKASOZOSHA Co.,Ltd.
+--------------------------------------------------------------- */
+
+@import url("fonts.css?date=20201026v3");
+
+@import url("reset.css?date=20201026v3");
+
+@import url("common_pc.css?date=20201026v3") screen and (min-width: 981px);
+@import url("index_pc.css?date=20201026v3") screen and (min-width: 981px);
+
+@import url("common_sp.css?date=20201026v3") screen and (max-width: 980px);
+@import url("index_sp.css?date=20201026v3") screen and (max-width: 980px);

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* CSS Information
+---------------------------------------------------------------
+Site URL:http://machiaruki.com/bunkasozosha/
+File name:index_pc.css
+Summary:base styles
+Created:2020-9-15
+Last update:2020-10-25 by Sadaoka
+Author:	Sadaoka(BUNKASOZOSHA Co.,Ltd.)
+Copyright:(C) BUNKASOZOSHA Co.,Ltd.
+--------------------------------------------------------------- */
+
+/* Topmain */
+/* ------------------------------------------------------------ */
+#topmain {
+	text-align: center;
+	padding: 20vh 0;
+	clear: both;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+}
+#topmain img {
+	width: auto;
+	height: 60vh;
+	filter: drop-shadow(-1px -1px 1px rgba(162,121,76,0.7));
+}
+
+/* Business */
+/* ------------------------------------------------------------ */
+#business {
+	margin: auto;
+	padding: 120px 0;
+}
+#business ul {
+	margin: 30px auto 0;
+}
+#business ul li {
+	line-height: 1.7;
+	list-style-type: square;
+	margin: 0 0 0 1em;
+}
+#business ul.bnr {
+	margin: 0 auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#business ul.bnr li {
+	list-style-type: none;
+	margin: 30px 0 0 0;
+}
+
+/* Information */
+/* ------------------------------------------------------------ */
+#information {
+	background: #d7d2cc;
+	margin: auto;
+	padding: 120px 0;
+}
+#information ul {
+	margin: 30px auto 0;
+}
+#information ul li {
+	line-height: 1.7;
+	list-style-type: square;
+	margin: 0 0 0 1em;
+}
+#information .indent {
+	line-height: 1.7;
+}
+#information h3 {
+	color: #231815;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: 0.03em;
+	margin: 30px 0;
+}
+
+/* Access */
+/* ------------------------------------------------------------ */
+#access {
+	margin: auto;
+	padding: 120px 0;
+}
+#access p {
+	text-align: center;
+}
+#access .map iframe {
+	width: 940px;
+	height: 300px;
+	margin: 60px 0 0;
+}

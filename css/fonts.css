@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* CSS Information
+---------------------------------------------------------------
+Site URL:http://kurashiki.me/
+File name:font.css
+Summary:base styles
+Created:2020-10-23
+Last update:2020-10-23 by Sadaoka
+Author:	Sadaoka(BUNKASOZOSHA Co.,Ltd.)
+Copyright:(C) BUNKASOZOSHA Co.,Ltd.
+--------------------------------------------------------------- */
+
+@font-face {
+	font-family: 'Noto Serif JP';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Regular.woff2) format('woff2'),
+		 url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Regular.woff) format('woff'),
+		 url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Regular.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Serif JP';
+	font-style: normal;
+	font-weight: 500;
+	src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Medium.woff2) format('woff2'),
+		 url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Medium.woff) format('woff'),
+		 url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Medium.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Serif JP';
+	font-style: normal;
+	font-weight: 600;
+	src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-SemiBold.woff2) format('woff2'),
+		 url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-SemiBold.woff) format('woff'),
+		 url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-SemiBold.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Serif JP';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Bold.woff2) format('woff2'),
+		 url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Bold.woff) format('woff'),
+		 url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Bold.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Serif JP';
+	font-style: normal;
+	font-weight: 800;
+	src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Black.woff2) format('woff2'),
+		 url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Black.woff) format('woff'),
+		 url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Black.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Ryo Text PlusN';
+	font-style: normal;
+	src: url(../fonts/RyoTextPlusN/RyoTextPlusN-Regular.woff2) format('woff2'),
+		 url(../fonts/RyoTextPlusN/RyoTextPlusN-Regular.woff) format('woff'),
+		 url(../fonts/RyoTextPlusN/RyoTextPlusN-Regular.otf) format('opentype');
+}
